@@ -1,0 +1,6 @@
+/* Footer.css */
+.site-footer{background:#0b0d10;color:#fff;padding-top:28px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+.footer-inner .brand{font-weight:700;color:var(--accent)}
+.socials a{color:#cbd5e1;margin-left:12px;text-decoration:none}
+.socials a:hover{color:#fff}

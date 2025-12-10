@@ -1,0 +1,22 @@
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:60;
+  background: rgba(255,255,255,0.95);
+  border-bottom:1px solid rgba(15,23,42,0.04);
+  backdrop-filter: blur(6px);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0;}
+.brand{font-weight:700;font-size:20px;color:var(--accent);letter-spacing:1px}
+.nav{display:flex;gap:22px;align-items:center}
+.nav a{color:#273141;text-decoration:none;font-weight:600;padding:6px 8px;transition:color .15s}
+.nav a:hover{color:var(--accent)}
+.nav .cta{background:var(--accent);color:#fff;padding:8px 14px;border-radius:22px}
+.hamburger{display:none;background:transparent;border:0;font-size:20px;cursor:pointer}
+
+/* mobile */
+@media (max-width:880px){
+  .nav{position:fixed;right:0;top:64px;background:linear-gradient(180deg,#ffffff,#f6f8fb);flex-direction:column;padding:18px;border-left:1px solid rgba(0,0,0,0.04);transform:translateX(110%);transition:transform .25s}
+  .nav.open{transform:translateX(0)}
+  .hamburger{display:block}
+}

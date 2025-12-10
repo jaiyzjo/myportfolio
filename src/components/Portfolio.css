@@ -1,0 +1,11 @@
+.portfolio-filters .filter{background:#fff;border:1px solid #e7e7ef;padding:8px 12px;border-radius:8px;margin:0 6px;cursor:pointer}
+.portfolio-filters .filter.active{background:var(--accent);color:#fff;border-color:transparent}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.project-card{background:#f3f4f6;border-radius:10px;padding:12px;overflow:hidden;box-shadow:0 12px 30px rgba(11,13,15,0.04)}
+.project-card img{width:100%;height:170px;object-fit:cover;border-radius:8px}
+.project-info{padding:12px 6px}
+.project-tag{color:#b78d4a;font-weight:700;text-transform:uppercase;font-size:12px;margin-bottom:8px}
+
+/* responsive */
+@media (max-width:1000px){ .portfolio-grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:600px){ .portfolio-grid{grid-template-columns:1fr} }
